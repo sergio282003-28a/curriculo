@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;    /*espaçamento entre linhas*/
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: blue;
+  color: #fff;
+  padding: 20px;
+  text-align: center; /*centraliza o texto*/
+  
+}
+
+header h1 {
+  margin: 0;
+}
+
+.titulo {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /*espaçamento entre os itens*/
+  list-style: none; /*remove os marcadores*/
+  padding: 10px 0;
+  margin: 0;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; /*deixa o texto em negrito*/
+}
+
+.menu li a:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;  /*sublinha o texto ao passar o mouse*/
+  transition: 0.4s; /*adiciona uma transição */
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;   
+}
+
+#contato a {
+  text-decoration: none;
+  color: #004080;
+  font-size: 1.2em; 
+}
+
+#contato i {
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) { /*aplica estilos para telas com largura de 600px ou menos*/
+
+
+  .menu {
+    flex-direction: column; /*muda a direção dos itens para coluna*/
+    align-items: center;    
+    
+  }
+  
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+      
+}
+
+}
